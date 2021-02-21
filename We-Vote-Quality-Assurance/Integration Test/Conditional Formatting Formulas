@@ -1,0 +1,24 @@
+--Number, Length
+=NOT(AND(ISNUMBER(A12),LEN(A12)<=3))
+=NOT(AND(ISNUMBER(B12),LEN(B12)<=3))
+=NOT(AND(ISNUMBER(C12),LEN(C12)<=4))
+=NOT(AND(ISNUMBER(G12),LEN(G12)<=9))
+--Text, Length, NULL
+=NOT(AND(ISTEXT(D12),LEN(D12)<=50,LEFT(D12,1)<>" ",RIGHT(D12,1)<>" "))
+=NOT(AND(ISTEXT(F12),LEN(F12)<=50,LEFT(F12,1)<>" ",RIGHT(F12,1)<>" "))
+--Text, List
+=NOT(OR(E12="Regular", E12="Special",E12="Advance",E12="Hospital",E12="Mail-in", E12="Outside Separate", E12="Travelling"))
+=NOT(OR(I2="MAYOR",I2="COUNCILLOR",I2="PUBLIC TRUSTEE"))
+--Number, with 1000 separator
+=NOT(AND(ISNUMBER(I12),I12<1000000000))
+--Number/Decimal,Percentage
+=NOT(AND(ISNUMBER(K2),AND(K2>=0,K2<=1)))
+
+--for Incumbent or Acclaimed (not Boolean)
+=NOT(OR(I2="T", I2="F"))
+
+=NOT(ISNUMBER(X2))
+$X$2:$X$289
+
+=NOT(ISTEXT(D12))
+$I$2:$I$4969

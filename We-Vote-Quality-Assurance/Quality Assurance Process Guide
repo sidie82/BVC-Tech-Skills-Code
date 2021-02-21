@@ -1,0 +1,17 @@
+Test early and test often
+1.	Test Cases
+    a.	Participate in Analyze to get a good grasp of USER stories
+    b.	Identify USER test cases as reference to internal test cases
+    c.	Ensure everyone’s alignment to team’s goals through timelines, weekly meetings and activities such as, test case creation exercises, automation exercises and walkthroughs
+    d.	Create test cases ahead of development delivery
+2.	Regression testing
+    a.	Ensure functionalities are kept in place throughout the life cycle of the project
+    b.	Perform QA UNIT test cases in Integration test
+3.	Automation
+    a.	Given we are pressed with time, whenever possible, come up with an automated process that could be performed repeatedly ensuring completeness, design alignment and expected behaviors. This will enable the team to test often whenever.
+    b.	Ensure each task can be performed by anyone in the team to avoid unnecessary delay for each iteration.
+    c.	Test Cases and milestones would be logged in project’s repository in github to ease tracking, documentation, communication, and collaboration with other teams in the project.
+4.	Test on real devices
+    a.	Test actual upload files.
+    b.	Test on database test environment.
+    c.	QA tests on dashboard(phase 2).

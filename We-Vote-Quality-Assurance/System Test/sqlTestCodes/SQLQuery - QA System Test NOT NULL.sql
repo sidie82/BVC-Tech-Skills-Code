@@ -1,0 +1,30 @@
+USE WeVotePhase2;
+BEGIN TRAN;
+INSERT INTO NewWard 
+VALUES (NULL);
+ROLLBACK;
+
+BEGIN TRAN;
+INSERT INTO WardChange 
+VALUES (NULL,NULL);
+ROLLBACK;
+
+BEGIN TRAN;
+INSERT INTO OfficeType 
+VALUES (33,NULL);
+ROLLBACK;
+
+BEGIN TRAN;
+INSERT INTO CommunityInformation 
+VALUES (NULL,'New Community',NULL,NULL);
+ROLLBACK;
+
+BEGIN TRAN;
+INSERT INTO RegularSpecialVotingStation_Result (PK_VotingStationResultIDs)
+VALUES (NULL);
+ROLLBACK;
+
+BEGIN TRAN;
+INSERT INTO Candidate_Result (PK_CandidateResultIDs)
+VALUES (NULL);
+ROLLBACK;
